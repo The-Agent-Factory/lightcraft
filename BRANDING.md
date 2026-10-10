@@ -28,6 +28,13 @@ In-app links: community -> https://www.skool.com/claudeacademy, website -> https
 
 - `apps/lightcraft-web/index.html`
 - `apps/lightcraft-web/src/web.rs`
+- `crates/ui-egui/locales/de.json`
+- `crates/ui-egui/locales/es.json`
+- `crates/ui-egui/locales/ja.json`
+- `crates/ui-egui/locales/pt-br.json`
+- `crates/ui-egui/locales/ru.json`
+- `crates/ui-egui/locales/zh-hans.json`
+- `crates/ui-egui/locales/zh-hant.json`
 - `crates/ui-egui/src/links.rs`
 - `crates/ui-egui/src/menubar.rs`
 - `crates/ui-egui/src/menus.rs`
