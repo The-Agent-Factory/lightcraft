@@ -1,3 +1,4 @@
+// Modified by The Agent Factory for Claude Academy: rebranding and web language detection (see BRANDING.md).
 //! Browser host: opens the library in browser storage, starts the render workers and eframe on
 //! `<canvas id="lightcraft_canvas">`, wires the file picker and drag-and-drop, and turns exports
 //! into downloads.
@@ -694,8 +695,8 @@ pub fn start(chinese_font: Vec<u8>) {
                 }
             }
             Err(e) => {
-                log::error!("LightCraft failed to start: {e:?}");
-                set_status(&format!("LightCraft failed to start: {e:?}"));
+                log::error!("Atelier Light failed to start: {e:?}");
+                set_status(&format!("Atelier Light failed to start: {e:?}"));
             }
         }
     });

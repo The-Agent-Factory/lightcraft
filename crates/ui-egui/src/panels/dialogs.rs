@@ -1,3 +1,4 @@
+// Modified by The Agent Factory for Claude Academy: rebranding and web language detection (see BRANDING.md).
 //! Modal dialogs (new album, rename, create preset, choose settings to copy, export, about, shortcuts).
 
 use lightcraft_develop::{ControlSpec, Section, SettingsGroup, Track};
@@ -106,7 +107,7 @@ pub fn show(app: &mut LightcraftApp, ctx: &egui::Context) {
         // (nothing to download from in this build: the dialog explains the manual install)
         Dialog::SamModel { .. } if sam_by_hand(&app.session.segmenter) => "Install the SAM 3 Model",
         Dialog::SamModel { .. } => "Download the SAM 3 Model?",
-        Dialog::About => "About LightCraft",
+        Dialog::About => "About Atelier Light",
         Dialog::Shortcuts => "Keyboard Shortcuts",
     }
     .to_string();
@@ -761,14 +762,14 @@ pub fn show(app: &mut LightcraftApp, ctx: &egui::Context) {
                         1 => crate::credits::contributors_ui(app, ui),
                         2 => crate::credits::models_ui(ui),
                         _ => {
-                            ui.label(egui::RichText::new("LightCraft").font(t.semibold(20.0)).color(t.text));
+                            ui.label(egui::RichText::new("Atelier Light").font(t.semibold(20.0)).color(t.text));
                             ui.label(crate::i18n::tr_format!("Version {} — a clean-room, pure-Rust photo library and raw developer.", env!("CARGO_PKG_VERSION")));
                             ui.label(crate::i18n::tr_format!(
                                 "MIT OR Apache-2.0. Fonts: {} (OFL). Icons: original.",
                                 crate::theme::font_credits(app.chinese_font.is_some())
                             ));
                             ui.add_space(10.0);
-                            let discord = egui::Button::new(egui::RichText::new(crate::i18n::tr("Join the ArtCraft Discord")).font(t.semibold(15.0)).color(egui::Color32::WHITE))
+                            let discord = egui::Button::new(egui::RichText::new(crate::i18n::tr("Claude Academy community")).font(t.semibold(15.0)).color(egui::Color32::WHITE))
                                 .fill(t.accent)
                                 .min_size(egui::vec2(260.0, 34.0));
                             let r = ui.add(discord).on_hover_text(crate::links::DISCORD);
@@ -780,7 +781,7 @@ pub fn show(app: &mut LightcraftApp, ctx: &egui::Context) {
                             for (label, url) in [
                                 ("LightCraft website", crate::links::APP_PAGE),
                                 ("Source code on GitHub", crate::links::GITHUB),
-                                ("ArtCraft — more creative apps", crate::links::WEBSITE),
+                                ("Claude Academy: more free tools", crate::links::WEBSITE),
                             ] {
                                 let r = ui.link(crate::i18n::tr(label)).on_hover_text(url);
                                 if r.clicked() {

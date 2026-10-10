@@ -1,3 +1,4 @@
+// Modified by The Agent Factory for Claude Academy: rebranding and web language detection (see BRANDING.md).
 //! The menu bar model: File, Edit, View, Photo, Window, Help, generated from the command registry
 //! (engine commands with menu paths + [`crate::menus::ui_commands`]) with live labels, shortcuts,
 //! enabled and checked state.
@@ -226,7 +227,7 @@ const LAYOUT: &[(&str, &[&str])] = &[
             "---",
             "app.website",
             "app.github",
-            "app.artcraft",
+            "app.academy",
             "---",
             "app.whatsNew",
             "app.shortcuts",

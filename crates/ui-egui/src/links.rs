@@ -1,13 +1,14 @@
+// Modified by The Agent Factory for Claude Academy: rebranding and web language detection (see BRANDING.md).
 //! Community and project links (Help menu, About dialog, top-bar Discord button).
 
 /// The app's id in ArtCraft URLs.
 pub const APP: &str = "lightcraft";
 /// The ArtCraft community Discord.
-pub const DISCORD: &str = "https://discord.gg/artcraft";
+pub const DISCORD: &str = "https://www.skool.com/claudeacademy";
 /// The ArtCraft website.
-pub const WEBSITE: &str = "https://getartcraft.com";
+pub const WEBSITE: &str = "https://claudeacademy.ca";
 /// This app's page on the ArtCraft website.
-pub const APP_PAGE: &str = "https://getartcraft.com/apps/lightcraft";
+pub const APP_PAGE: &str = "https://claudeacademy.ca";
 /// This app's source repository.
 pub const GITHUB: &str = "https://github.com/storytold/lightcraft";
 
@@ -17,10 +18,10 @@ pub const HELP: &str = "https://github.com/storytold/lightcraft/tree/main/docs";
 
 pub const LINKS: &[(&str, &str, &str)] = &[
     ("app.help", "LightCraft Help", HELP),
-    ("app.discord", "Join the ArtCraft Discord…", DISCORD),
+    ("app.discord", "Claude Academy community…", DISCORD),
     ("app.website", "LightCraft Website", APP_PAGE),
     ("app.github", "LightCraft on GitHub", GITHUB),
-    ("app.artcraft", "ArtCraft Website", WEBSITE),
+    ("app.academy", "Claude Academy website", WEBSITE),
     ("app.feedback", "Send Feedback…", FEEDBACK),
 ];
 

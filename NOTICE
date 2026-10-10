@@ -41,3 +41,11 @@ also embed the fonts listed in https://github.com/storytold/craft-fonts/blob/mai
 (the Japanese fonts BIZ UDPGothic, BIZ UDMincho and Shippori Mincho; the web build embeds only BIZ
 UDPGothic Regular), under the SIL Open Font License 1.1. Release packages include each font's
 licence as OFL-<family>.txt.
+
+--------------------------------------------------------------------------------
+Modified by The Agent Factory for Claude Academy: rebranding and web language detection (see BRANDING.md).
+This modified version is published as "Atelier Light". It is based on LightCraft by the
+ArtCraft team (https://github.com/storytold/lightcraft). It is not an ArtCraft product and is not
+affiliated with or endorsed by the ArtCraft team, Adobe or Microsoft. The ArtCraft name and
+marks have been removed as required by docs/brand/LICENSE-brand.txt of the original project.
+All original copyright notices and the MIT and Apache-2.0 licenses are kept unchanged.

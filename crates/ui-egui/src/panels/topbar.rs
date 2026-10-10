@@ -1,3 +1,4 @@
+// Modified by The Agent Factory for Claude Academy: rebranding and web language detection (see BRANDING.md).
 //! The top bar: sidebar toggle, back/forward, search, filter, and the right-hand icons.
 
 use egui::{Align2, Rect, Sense, Stroke, StrokeKind, pos2, vec2};
@@ -160,7 +161,7 @@ pub fn show(app: &mut LightcraftApp, ui: &mut egui::Ui) {
             });
             let cloud_tip = unsaved.as_deref().unwrap_or("Local library — no cloud account needed");
             for (id, icon, tip, cmd) in [
-                ("discord", Icon::Chat, "Join the ArtCraft community on Discord", "app.discord"),
+                ("discord", Icon::Chat, "Join the Claude Academy community", "app.discord"),
                 ("cloud", Icon::Cloud, cloud_tip, ""),
                 ("help", Icon::Help, "Keyboard shortcuts", "app.shortcuts"),
                 ("share", Icon::Share, "Export", "dialog.export"),
